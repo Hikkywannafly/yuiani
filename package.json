@@ -1,7 +1,7 @@
 {
-  "name": "@movie-web/providers",
-  "version": "2.3.0",
-  "description": "Package that contains all the providers of movie-web",
+  "name": "@yuiani/providers",
+  "version": "1.0.0",
+  "description": "Package that contains all the providers of movie, show, anime",
   "type": "module",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -22,18 +22,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/movie-web/providers.git"
+    "url": "git+https://github.com/Hikkywannafly/providers.git"
   },
   "keywords": [
-    "movie-web",
+    "yuiani",
     "providers"
   ],
   "author": "movie-web",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/movie-web/providers/issues"
-  },
-  "homepage": "https://movie-web.github.io/providers/",
+  "homepage": "https://github.com/Hikkywannafly/providers#readme",
   "scripts": {
     "build": "vite build && tsc --noEmit",
     "cli": "vite-node ./src/dev-cli/index.ts",
@@ -92,5 +89,13 @@
     "node-fetch": "^3.3.2",
     "set-cookie-parser": "^2.6.0",
     "unpacker": "^1.0.1"
+  },
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "bugs": {
+    "url": "https://github.com/Hikkywannafly/providers/issues"
   }
 }

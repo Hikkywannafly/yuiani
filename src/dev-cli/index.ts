@@ -128,6 +128,10 @@ async function runQuestions() {
             message: 'TV Show',
             name: 'show',
           },
+          {
+            message: 'Anime',
+            name: 'anime',
+          },
         ],
       },
     ]);

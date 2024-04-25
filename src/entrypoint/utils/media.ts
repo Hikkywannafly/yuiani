@@ -6,7 +6,7 @@ export type CommonMedia = {
   anilistId?: string;
 };
 
-export type MediaTypes = 'show' | 'movie';
+export type MediaTypes = 'anime' | 'show' | 'movie';
 
 export type ShowMedia = CommonMedia & {
   type: 'show';

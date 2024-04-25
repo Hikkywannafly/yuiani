@@ -24,7 +24,7 @@ export async function getSubtitles(
   ctx: ScrapeContext,
   id: string,
   fid: number | undefined,
-  type: 'show' | 'movie',
+  type: 'show' | 'movie' | 'anime',
   episodeId?: number,
   seasonId?: number,
 ): Promise<Caption[]> {

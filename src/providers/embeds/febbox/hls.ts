@@ -24,7 +24,8 @@ export const febboxHlsScraper = makeEmbed({
       baseUrl: showboxBase,
       query: {
         id,
-        type: type === 'movie' ? '1' : '2',
+        // add 1 for movie, 2 for tv show , 3 for anime
+        type: type === 'anime' ? '3' : type === 'movie' ? '1' : '2',
       },
     });
     if (!sharelinkResult?.data?.link) throw new Error('No embed url found');

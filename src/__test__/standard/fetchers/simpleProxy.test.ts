@@ -5,7 +5,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 
 describe('makeSimpleProxyFetcher()', () => {
   const fetch = vi.fn();
-  const fetcher = makeSimpleProxyFetcher('https://dev--creative-semifreddo-b76528.netlify.app/', fetch);
+  const fetcher = makeSimpleProxyFetcher('https://example.com/proxy', fetch);
 
   afterEach(() => {
     vi.clearAllMocks();
