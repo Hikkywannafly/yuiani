@@ -72,6 +72,7 @@ export function testSource(ops: TestSourceOptions) {
           it(`standard:ip`, async () => {
             const providers = makeBaseProviders().addSource(ops.source).enableConsistentIpForRequests().build();
             await runTest(providers);
+            console.log(runTest(providers))
           });
         }
 
@@ -86,6 +87,7 @@ export function testSource(ops: TestSourceOptions) {
             await runTest(providers);
           });
         }
+
       });
     });
   });

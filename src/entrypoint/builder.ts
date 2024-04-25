@@ -80,7 +80,6 @@ export function buildProviders(): ProviderBuilder {
         embeds,
         sources,
       });
-
       return makeControls({
         fetcher,
         proxiedFetcher: proxiedFetcher ?? undefined,

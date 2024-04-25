@@ -12,6 +12,7 @@ import { upcloudScraper } from '@/providers/embeds/upcloud';
 import { upstreamScraper } from '@/providers/embeds/upstream';
 import { vidsrcembedScraper } from '@/providers/embeds/vidsrc';
 import { vTubeScraper } from '@/providers/embeds/vtube';
+import { animevsubScraper } from '@/providers/sources/animevsub/index';
 import { flixhqScraper } from '@/providers/sources/flixhq/index';
 import { goMoviesScraper } from '@/providers/sources/gomovies/index';
 import { insertunitScraper } from '@/providers/sources/insertunit';
@@ -22,9 +23,6 @@ import { showboxScraper } from '@/providers/sources/showbox/index';
 import { tugaflixScraper } from '@/providers/sources/tugaflix';
 import { vidsrcScraper } from '@/providers/sources/vidsrc/index';
 import { zoechipScraper } from '@/providers/sources/zoechip';
-
-// // animes
-// import {}
 
 import { bflixScraper } from './embeds/bflix';
 import { closeLoadScraper } from './embeds/closeload';
@@ -75,6 +73,8 @@ export function gatherAllSources(): Array<Sourcerer> {
     nitesScraper,
     soaperTvScraper,
     tugaflixScraper,
+    // anime
+    animevsubScraper,
   ];
 }
 

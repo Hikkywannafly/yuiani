@@ -14,6 +14,8 @@ function formatSourceMeta(v: Sourcerer): MetaOutput {
   const types: Array<MediaTypes> = [];
   if (v.scrapeMovie) types.push('movie');
   if (v.scrapeShow) types.push('show');
+  // anime
+  // if (v.scrapeAnime) types.push('anime');
   return {
     type: 'source',
     id: v.id,

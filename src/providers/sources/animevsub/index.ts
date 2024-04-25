@@ -1,11 +1,16 @@
-// import { load } from 'cheerio';
+import { flags } from '@/entrypoint/utils/targets';
+import { makeSourcerer } from '@/providers/base';
+import { scrapeMovie } from '@/providers/sources/zoechip/scrape-movie';
+import { scrapeShow } from '@/providers/sources/zoechip/scrape-show';
 
-// import { makeSourcerer } from '@/providers/base';
+export const animevsubBase = `https://animevietsub.day/`;
 
-// import { search } from './search';
-
-// export const avsBase = `https://animevietsub.day/`;
-
-// export const avsScraper = makeSourcerer({
-
-// })
+export const animevsubScraper = makeSourcerer({
+  id: 'animevsub',
+  name: 'Animevsub',
+  rank: 62,
+  flags: [flags.CORS_ALLOWED],
+  disabled: true,
+  scrapeMovie,
+  scrapeShow,
+});

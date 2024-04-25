@@ -41,6 +41,8 @@ export async function runAllProviders(list: ProviderList, ops: ProviderRunnerOpt
   const sources = reorderOnIdList(ops.sourceOrder ?? [], list.sources).filter((source) => {
     if (ops.media.type === 'movie') return !!source.scrapeMovie;
     if (ops.media.type === 'show') return !!source.scrapeShow;
+    // anime
+    if (ops.media.type === 'anime') return !!source.scrapeAnime;
     return false;
   });
   const embeds = reorderOnIdList(ops.embedOrder ?? [], list.embeds);
@@ -77,6 +79,12 @@ export async function runAllProviders(list: ProviderList, ops: ProviderRunnerOpt
         });
       else if (ops.media.type === 'show' && source.scrapeShow)
         output = await source.scrapeShow({
+          ...contextBase,
+          media: ops.media,
+        });
+      // anime
+      else if (ops.media.type === 'anime' && source.scrapeAnime)
+        output = await source.scrapeAnime({
           ...contextBase,
           media: ops.media,
         });

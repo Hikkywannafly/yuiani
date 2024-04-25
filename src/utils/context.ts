@@ -1,4 +1,4 @@
-import { MovieMedia, ShowMedia } from '@/entrypoint/utils/media';
+import { AnimeMedia, MovieMedia, ShowMedia } from '@/entrypoint/utils/media';
 import { UseableFetcher } from '@/fetchers/types';
 
 export type ScrapeContext = {
@@ -19,4 +19,8 @@ export type MovieScrapeContext = ScrapeContext & {
 
 export type ShowScrapeContext = ScrapeContext & {
   media: ShowMedia;
+};
+
+export type AnimeScrapeContext = ScrapeContext & {
+  media: AnimeMedia;
 };

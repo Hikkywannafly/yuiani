@@ -1,8 +1,8 @@
 import { Flags } from '@/entrypoint/utils/targets';
 import { Stream } from '@/providers/streams';
-import { EmbedScrapeContext, MovieScrapeContext, ShowScrapeContext } from '@/utils/context';
+import { AnimeScrapeContext, EmbedScrapeContext, MovieScrapeContext, ShowScrapeContext } from '@/utils/context';
 
-export type MediaScraperTypes = 'show' | 'movie';
+export type MediaScraperTypes = 'show' | 'movie' | 'anime';
 
 export type SourcererEmbed = {
   embedId: string;
@@ -22,6 +22,7 @@ export type SourcererOptions = {
   flags: Flags[];
   scrapeMovie?: (input: MovieScrapeContext) => Promise<SourcererOutput>;
   scrapeShow?: (input: ShowScrapeContext) => Promise<SourcererOutput>;
+  scrapeAnime?: (input: AnimeScrapeContext) => Promise<SourcererOutput>;
 };
 
 export type Sourcerer = SourcererOptions & {
@@ -34,6 +35,8 @@ export function makeSourcerer(state: SourcererOptions): Sourcerer {
   const mediaTypes: MediaScraperTypes[] = [];
   if (state.scrapeMovie) mediaTypes.push('movie');
   if (state.scrapeShow) mediaTypes.push('show');
+  // add anime sources
+  if (state.scrapeAnime) mediaTypes.push('anime');
   return {
     ...state,
     type: 'source',

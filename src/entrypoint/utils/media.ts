@@ -2,7 +2,8 @@ export type CommonMedia = {
   title: string;
   releaseYear: number;
   imdbId?: string;
-  tmdbId: string;
+  tmdbId?: string;
+  anilistId?: string;
 };
 
 export type MediaTypes = 'show' | 'movie';
