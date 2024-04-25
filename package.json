@@ -1,5 +1,5 @@
 {
-  "name": "@yuiani/providers",
+  "name": "yuiani",
   "version": "1.0.0",
   "description": "Package that contains all the providers of movie, show, anime",
   "type": "module",
@@ -28,7 +28,7 @@
     "yuiani",
     "providers"
   ],
-  "author": "movie-web",
+  "author": "Hikkywannafly",
   "license": "MIT",
   "homepage": "https://github.com/Hikkywannafly/providers#readme",
   "scripts": {
