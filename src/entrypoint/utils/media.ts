@@ -26,13 +26,22 @@ export type MovieMedia = CommonMedia & {
 
 export type AnimeMedia = CommonMedia & {
   type: 'anime';
+  media: {
+    id: number;
+    title: {
+      romaji: string;
+      english: string;
+      userPreferred?: string;
+      native?: string;
+    };
+  };
   episode: {
     number: number;
-    anilistId: string;
+    anilistId?: string;
   };
   season: {
     number: number;
-    anilistId: string;
+    anilistId?: string;
   };
 };
 
