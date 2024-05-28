@@ -1,4 +1,4 @@
-# @yuiani/providers
+#yuiani
 
 package that holds all providers of yuiani.
 Feel free to use for your own projects.
