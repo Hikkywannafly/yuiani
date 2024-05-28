@@ -38,6 +38,7 @@
     "test:watch": "vitest",
     "test:providers": "cross-env MW_TEST_PROVIDERS=true vitest run --reporter verbose",
     "test:integration": "node ./tests/cjs && node ./tests/esm && node ./tests/browser",
+    "test:anime": "node src/__test__/providers/animeprovider.test.ts",
     "test:coverage": "vitest run --coverage",
     "lint": "eslint --ext .ts,.js src/",
     "lint:fix": "eslint --fix --ext .ts,.js src/",

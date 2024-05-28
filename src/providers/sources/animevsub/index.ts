@@ -58,7 +58,7 @@ export const animevsubScraper = makeSourcerer({
   name: 'Animevsub',
   rank: 62,
   flags: [flags.CORS_ALLOWED],
-  disabled: true,
+  disabled: false,
   scrapeMovie,
   scrapeShow,
   async scrapeAnime(ctx) {

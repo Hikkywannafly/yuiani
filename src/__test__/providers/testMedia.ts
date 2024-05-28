@@ -28,3 +28,26 @@ export const testMedia = {
     title: 'Hamilton',
   }),
 };
+
+export const testMediaAnime = {
+  jujutsuKaisen: makeMedia({
+    type: 'anime',
+    releaseYear: 2020,
+    title: 'Jujutsu Kaisen',
+    media: {
+      id: 107922,
+      title: {
+        romaji: 'Jujutsu Kaisen',
+        english: 'Jujutsu Kaisen',
+      },
+    },
+    episode: {
+      number: 1,
+      anilistId: '117469',
+    },
+    season: {
+      number: 1,
+      anilistId: '117469',
+    },
+  }),
+};
