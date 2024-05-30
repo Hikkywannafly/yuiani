@@ -12,12 +12,12 @@ import { upcloudScraper } from '@/providers/embeds/upcloud';
 import { upstreamScraper } from '@/providers/embeds/upstream';
 import { vidsrcembedScraper } from '@/providers/embeds/vidsrc';
 import { vTubeScraper } from '@/providers/embeds/vtube';
-import { animevsubScraper } from '@/providers/sources/animevsub/index';
 import { flixhqScraper } from '@/providers/sources/flixhq/index';
 import { goMoviesScraper } from '@/providers/sources/gomovies/index';
 import { insertunitScraper } from '@/providers/sources/insertunit';
 import { kissAsianScraper } from '@/providers/sources/kissasian/index';
 import { lookmovieScraper } from '@/providers/sources/lookmovie';
+import { nsbxScraper } from '@/providers/sources/nsbx';
 import { remotestreamScraper } from '@/providers/sources/remotestream';
 import { showboxScraper } from '@/providers/sources/showbox/index';
 import { tugaflixScraper } from '@/providers/sources/tugaflix';
@@ -28,6 +28,7 @@ import { bflixScraper } from './embeds/bflix';
 import { closeLoadScraper } from './embeds/closeload';
 import { fileMoonScraper } from './embeds/filemoon';
 import { fileMoonMp4Scraper } from './embeds/filemoon/mp4';
+import { alphaScraper, deltaScraper } from './embeds/nsbx';
 import { ridooScraper } from './embeds/ridoo';
 import { smashyStreamOScraper } from './embeds/smashystream/opstream';
 import { smashyStreamFScraper } from './embeds/smashystream/video1';
@@ -49,6 +50,8 @@ import { smashyStreamScraper } from './sources/smashystream';
 import { soaperTvScraper } from './sources/soapertv';
 import { vidSrcToScraper } from './sources/vidsrcto';
 import { warezcdnScraper } from './sources/warezcdn';
+
+// import { animevsubScraper } from '@/providers/sources/animevsub/index';
 
 export function gatherAllSources(): Array<Sourcerer> {
   // all sources are gathered here
@@ -73,8 +76,9 @@ export function gatherAllSources(): Array<Sourcerer> {
     nitesScraper,
     soaperTvScraper,
     tugaflixScraper,
+    nsbxScraper,
     // anime
-    animevsubScraper,
+    // animevsubScraper,
   ];
 }
 
@@ -109,5 +113,7 @@ export function gatherAllEmbeds(): Array<Embed> {
     warezcdnembedHlsScraper,
     warezcdnembedMp4Scraper,
     bflixScraper,
+    alphaScraper,
+    deltaScraper,
   ];
 }
