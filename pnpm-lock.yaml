@@ -57,7 +57,7 @@ devDependencies:
     version: 2.0.3
   '@types/set-cookie-parser':
     specifier: ^2.4.7
-    version: 2.4.7
+    version: 2.4.9
   '@types/spinnies':
     specifier: ^0.5.3
     version: 0.5.3
@@ -844,8 +844,8 @@ packages:
       '@types/node': 20.14.0
     dev: true
 
-  /@types/set-cookie-parser@2.4.7:
-    resolution: {integrity: sha512-+ge/loa0oTozxip6zmhRIk8Z/boU51wl9Q6QdLZcokIGMzY5lFXYy/x7Htj2HTC6/KZP1hUbZ1ekx8DYXICvWg==}
+  /@types/set-cookie-parser@2.4.9:
+    resolution: {integrity: sha512-bCorlULvl0xTdjj4BPUHX4cqs9I+go2TfW/7Do1nnFYWS0CPP429Qr1AY42kiFhCwLpvAkWFr1XIBHd8j6/MCQ==}
     dependencies:
       '@types/node': 20.14.0
     dev: true
