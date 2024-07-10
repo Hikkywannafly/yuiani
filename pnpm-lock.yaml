@@ -59,7 +59,7 @@ importers:
         version: 2.0.3
       '@types/set-cookie-parser':
         specifier: ^2.4.7
-        version: 2.4.9
+        version: 2.4.10
       '@types/spinnies':
         specifier: ^0.5.3
         version: 0.5.3
@@ -549,8 +549,8 @@ packages:
   '@types/randombytes@2.0.3':
     resolution: {integrity: sha512-+NRgihTfuURllWCiIAhm1wsJqzsocnqXM77V/CalsdJIYSRGEHMnritxh+6EsBklshC+clo1KgnN14qgSGeQdw==}
 
-  '@types/set-cookie-parser@2.4.9':
-    resolution: {integrity: sha512-bCorlULvl0xTdjj4BPUHX4cqs9I+go2TfW/7Do1nnFYWS0CPP429Qr1AY42kiFhCwLpvAkWFr1XIBHd8j6/MCQ==}
+  '@types/set-cookie-parser@2.4.10':
+    resolution: {integrity: sha512-GGmQVGpQWUe5qglJozEjZV/5dyxbOOZ0LHe/lqyWssB88Y4svNfst0uqBVscdDeIKl5Jy5+aPSvy7mI9tYRguw==}
 
   '@types/spinnies@0.5.3':
     resolution: {integrity: sha512-HYrOubG2TVgRQRKcW1HJ/1eJIIBpLqDoJo551McJgWdO8xzxnaxu/bPKdqC/7okoEy4ZZjy3I4/DwK1sz2OCog==}
@@ -2852,7 +2852,7 @@ snapshots:
     dependencies:
       '@types/node': 20.14.0
 
-  '@types/set-cookie-parser@2.4.9':
+  '@types/set-cookie-parser@2.4.10':
     dependencies:
       '@types/node': 20.14.0
 
