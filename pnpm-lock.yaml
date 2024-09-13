@@ -124,8 +124,8 @@ importers:
         specifier: ^5.2.7
         version: 5.4.5(@types/node@20.14.0)
       vite-node:
-        specifier: ^1.4.0
-        version: 1.6.0(@types/node@20.14.0)
+        specifier: ^2.1.0
+        version: 2.1.0(@types/node@20.14.0)
       vite-plugin-dts:
         specifier: ^3.8.1
         version: 3.9.1(@types/node@20.14.0)(rollup@4.21.0)(typescript@5.6.2)(vite@5.4.5(@types/node@20.14.0))
@@ -2369,6 +2369,11 @@ packages:
 
   vite-node@1.6.0:
     resolution: {integrity: sha512-de6HJgzC+TFzOu0NTC4RAIsyf/DY/ibWDYQUcuEA84EMHhcefTUGkjFHKKEJhQN4A+6I0u++kr3l36ZF2d7XRw==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    hasBin: true
+
+  vite-node@2.1.0:
+    resolution: {integrity: sha512-+ybYqBVUjYyIscoLzMWodus2enQDZOpGhcU6HdOVD6n8WZdk12w1GFL3mbnxLs7hPtRtqs1Wo5YF6/Tsr6fmhg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
 
@@ -4980,9 +4985,26 @@ snapshots:
   vite-node@1.6.0(@types/node@20.14.0):
     dependencies:
       cac: 6.7.14
-      debug: 4.3.5
+      debug: 4.3.6
       pathe: 1.1.2
       picocolors: 1.0.1
+      vite: 5.4.5(@types/node@20.14.0)
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - lightningcss
+      - sass
+      - sass-embedded
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+
+  vite-node@2.1.0(@types/node@20.14.0):
+    dependencies:
+      cac: 6.7.14
+      debug: 4.3.6
+      pathe: 1.1.2
       vite: 5.4.5(@types/node@20.14.0)
     transitivePeerDependencies:
       - '@types/node'
