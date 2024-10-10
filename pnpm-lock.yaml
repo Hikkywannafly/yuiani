@@ -22,7 +22,7 @@ importers:
         version: 4.2.0
       form-data:
         specifier: ^4.0.0
-        version: 4.0.0
+        version: 4.0.1
       iso-639-1:
         specifier: ^3.1.2
         version: 3.1.3
@@ -1341,8 +1341,8 @@ packages:
   for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
 
-  form-data@4.0.0:
-    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
+  form-data@4.0.1:
+    resolution: {integrity: sha512-tzN8e4TX8+kkxGPK8D5u0FNmjPUjw3lwC9lSLxxoB/+GtsJG91CO8bSWy73APlgAZzZbXEYZJuxjkHH2w+Ezhw==}
     engines: {node: '>= 6'}
 
   formdata-polyfill@4.0.10:
@@ -2891,7 +2891,7 @@ snapshots:
   '@types/node-fetch@2.6.11':
     dependencies:
       '@types/node': 20.14.0
-      form-data: 4.0.0
+      form-data: 4.0.1
 
   '@types/node@20.14.0':
     dependencies:
@@ -3198,7 +3198,7 @@ snapshots:
   axios@1.7.7:
     dependencies:
       follow-redirects: 1.15.6
-      form-data: 4.0.0
+      form-data: 4.0.1
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
@@ -3908,7 +3908,7 @@ snapshots:
     dependencies:
       is-callable: 1.2.7
 
-  form-data@4.0.0:
+  form-data@4.0.1:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
@@ -5151,7 +5151,7 @@ snapshots:
       cheerio: 1.0.0
       cookie: 0.6.0
       crypto-js: 4.2.0
-      form-data: 4.0.0
+      form-data: 4.0.1
       iso-639-1: 3.1.3
       nanoid: 3.3.7
       node-fetch: 3.3.2
