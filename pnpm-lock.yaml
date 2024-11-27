@@ -44,7 +44,7 @@ importers:
     devDependencies:
       '@nabla/vite-plugin-eslint':
         specifier: ^2.0.2
-        version: 2.0.4(eslint@8.57.1)(vite@5.4.11(@types/node@20.14.0))
+        version: 2.0.5(eslint@8.57.1)(vite@5.4.11(@types/node@20.14.0))
       '@types/cookie':
         specifier: ^0.6.0
         version: 0.6.0
@@ -375,11 +375,11 @@ packages:
   '@microsoft/tsdoc@0.14.2':
     resolution: {integrity: sha512-9b8mPpKrfeGRuhFH5iO1iwCLeIIsV6+H1sRfxbkoGXIyQE2BTsPd9zqSqQJ+pv5sJ/hT5M1zvOFL02MnEezFug==}
 
-  '@nabla/vite-plugin-eslint@2.0.4':
-    resolution: {integrity: sha512-hXLv7XPZLKP54AHLI6JzlCRYptf34rBmT1FyRBi++iN5ucjO7CEf5etV3DfQ2rfTpgMbY+3hoCAfwilA6lyWdw==}
+  '@nabla/vite-plugin-eslint@2.0.5':
+    resolution: {integrity: sha512-m6Q8ZVM0ASZfYyfFbG661mDklhZQZEeBMQgtB26NhdadxPSctHzHsUbF87msdSb0V4Z8R1p/vRkB5SHNOpANAQ==}
     peerDependencies:
       eslint: ^8.45 || ^9
-      vite: ^4 || ^5
+      vite: ^4 || ^5 || ^6
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -2738,11 +2738,11 @@ snapshots:
 
   '@microsoft/tsdoc@0.14.2': {}
 
-  '@nabla/vite-plugin-eslint@2.0.4(eslint@8.57.1)(vite@5.4.11(@types/node@20.14.0))':
+  '@nabla/vite-plugin-eslint@2.0.5(eslint@8.57.1)(vite@5.4.11(@types/node@20.14.0))':
     dependencies:
       '@types/eslint': 8.56.10
       chalk: 4.1.2
-      debug: 4.3.5
+      debug: 4.3.6
       eslint: 8.57.1
       vite: 5.4.11(@types/node@20.14.0)
     transitivePeerDependencies:
