@@ -27,8 +27,8 @@ importers:
         specifier: ^3.1.2
         version: 3.1.5
       nanoid:
-        specifier: ^3.3.7
-        version: 3.3.7
+        specifier: ^5.1.3
+        version: 5.1.3
       node-fetch:
         specifier: ^3.3.2
         version: 3.3.2
@@ -1840,9 +1840,14 @@ packages:
     resolution: {integrity: sha512-+MrqnJRtxdF+xngFfUUkIMQrUUL0KsxbADUkn23Z/4ibGg192Q+z+CQyiYwvWTsYjJygmMR8+w3ZDa98Zh6ESg==}
     engines: {node: '>=12.0.0'}
 
-  nanoid@3.3.7:
-    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
+  nanoid@3.3.9:
+    resolution: {integrity: sha512-SppoicMGpZvbF1l3z4x7No3OlIjP7QJvC9XR7AhZr1kL133KHnKPztkKDc+Ir4aJ/1VhTySrtKhrsycmrMQfvg==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+
+  nanoid@5.1.3:
+    resolution: {integrity: sha512-zAbEOEr7u2CbxwoMRlz/pNSpRP0FdAU4pRaYunCdEezWohXFs+a0Xw7RfkKaezMsmSM1vttcLthJtwRnVtOfHQ==}
+    engines: {node: ^18 || >=20}
     hasBin: true
 
   natural-compare@1.4.0:
@@ -4453,7 +4458,9 @@ snapshots:
 
   mylas@2.1.13: {}
 
-  nanoid@3.3.7: {}
+  nanoid@3.3.9: {}
+
+  nanoid@5.1.3: {}
 
   natural-compare@1.4.0: {}
 
@@ -4628,7 +4635,7 @@ snapshots:
 
   postcss@8.4.45:
     dependencies:
-      nanoid: 3.3.7
+      nanoid: 3.3.9
       picocolors: 1.0.1
       source-map-js: 1.2.0
 
@@ -5257,7 +5264,7 @@ snapshots:
       crypto-js: 4.2.0
       form-data: 4.0.2
       iso-639-1: 3.1.5
-      nanoid: 3.3.7
+      nanoid: 3.3.9
       node-fetch: 3.3.2
       set-cookie-parser: 2.7.1
       unpacker: 1.0.1
